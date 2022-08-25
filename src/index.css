@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  @apply bg-black text-white;
+}
+
+span{
+  line-height: 1;
+}
+
+li{
+  list-style-type: none;
+}
