@@ -3,12 +3,8 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
-      animationDelay: {
-        4000: "4000ms",
-        8000: "8000ms"
-      },
-      variants: {
-        animationDelay: ["responsive", "hover"],
+      letterSpacing: {
+        widest: '0.2rem',
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
@@ -42,7 +38,5 @@ module.exports = {
       }
     },
   },
-  plugins: [
-    require("tailwindcss-animation-delay"),
-  ],
+  plugins: [],
 };

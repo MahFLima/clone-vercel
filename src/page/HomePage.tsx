@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Explorer } from "../components/Explorer";
 import { Header } from "../components/Header";
 import { HeaderMobile } from "../components/HeaderMobile";
 import { Home } from "../components/Home";
@@ -18,6 +19,7 @@ export function HomePage(){
       (
         <>
           <Home/>
+          <Explorer/>
         </>
       )}
     </div>
