@@ -1,12 +1,13 @@
 import image from "../assets/image.png"
+import { ListIcon } from "./ListIcon"
 
 export function Develop() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="w-full flex flex-col mb-20 items-center px-8 md:px-12">
       <span className="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-black mb-6">1</span>
       <strong className="text-blue-400 text-2xl mb-6 ">Develop</strong>
-      <p className="text-6xl font-bold text-center">Start with the developer</p>
-      <div className="flex flex-col md:flex-row gap-10 px-20 mt-8 mb-16">
+      <p className="text-4xl md:text-6xl font-bold">Start with the developer</p>
+      <div className="flex flex-col md:flex-row gap-10 mt-8 mb-16">
         <p className="text-gray-400 text-sm">
           Developers love <a href="#" className="text-blue-400">Next.js</a>,
           the open source React framework Vercel built together with Google and Facebook.
@@ -22,7 +23,7 @@ export function Develop() {
           to millions of pages without breaking a sweat.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center gap-8 px-20">
+      <div className="flex flex-col lg:flex-row items-center gap-8">
         <img src={image}/>
         <div className="flex flex-col">
           <strong className="text-2xl mb-3">Fast Refresh</strong>
@@ -35,9 +36,11 @@ export function Develop() {
           <p className="text-gray-400 text-base">From caching to Serverless Functions, all our cloud primitives work perfectly on localhost.</p>
         </div>
       </div>
-      <p className="text-xs font-semibold text-center mt-12 tracking-widest">WORKS WITH 30+ FRAMEWORKS</p>
-      <div className="flex gap-8">
-      </div>
+    
+      <p className="text-xs font-semibold mt-12 tracking-widest">WORKS WITH 30+ FRAMEWORKS</p>
+
+      <ListIcon/>      
+
     </div>
   )
 }

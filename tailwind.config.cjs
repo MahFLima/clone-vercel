@@ -15,6 +15,15 @@ module.exports = {
         },
         pink: {
           400: "#ff0080",
+        },
+        orange:{
+          400: "#f9cb28"
+        },
+        red:{
+          400: "#FF5B4F"
+        },
+        gray:{
+          700: "#111111"
         }
       },
       animation:{
